@@ -1,0 +1,69 @@
+body {
+    text-align: center;
+}
+
+
+
+
+#racetrack {
+    background: url('../img/road.png') center left repeat-x;
+    height: 270px;
+    border-right: dotted 20px white;
+    box-sizing: border-box;
+    margin: 40px 0;
+}
+
+.car {
+    margin-left: 0px;
+    display: block;
+    position: relative;    
+    width: 30px;
+    height: 30px;
+}
+
+#carScoreContainer {
+    width: 80%;
+    margin: 40px auto 0;
+    background: #333;
+}
+
+#carScoreContainer h2 {
+    color: white;
+    text-transform: uppercase;
+    border-bottom: solid 1px white;
+    padding: 20px 0;
+}
+
+.carScore {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    width: 50%;
+    float: left;
+}
+
+.carScore span {
+    display: block;
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+}
+
+input[type="button"] {
+    background: #77b72f;
+    color: white;
+    padding: 10px 20px;
+    border: solid 1px #444;
+}
+
+input#reset {
+    background: #fc3;
+    color: #444;
+}
+
+.clearfix:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+

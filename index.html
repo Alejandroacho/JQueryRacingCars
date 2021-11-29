@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Car Race</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    
+    <body id="race">
+        <!-- Page title -->
+        <h1>Car Race</h1>
+
+        <!-- Selector to choose the cars numbers -->
+        <select id="carsNumber">
+            <option value="" selected disabled hidden>Choose cars number</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+        </select>        
+        <br>
+        <br>
+
+        <!-- Start race button -->
+        <input type="button" value="Race!" id="startRace">
+        <br>        
+        <br>
+
+        <!-- Retart race button -->
+        <input type="button" value="Reset" id="reset">
+
+        <!-- Div with the cars (background will be the ground) -->
+        <div id="racetrack">
+            <img src="img/car1.png" alt="Car 1" id="car1" class="car">
+            <img src="img/car2.png" alt="Car 2" id="car2" class="car">
+            <img src="img/car3.png" alt="Car 3" id="car3" class="car">
+            <img src="img/car4.png" alt="Car 4" id="car4" class="car">
+            <img src="img/car5.png" alt="Car 5" id="car5" class="car">
+            <img src="img/car6.png" alt="Car 6" id="car6" class="car">
+            <img src="img/car7.png" alt="Car 7" id="car7" class="car">
+            <img src="img/car8.png" alt="Car 8" id="car8" class="car">
+            <img src="img/car9.png" alt="Car 9" id="car9" class="car">
+        </div>
+        
+        <div id="carScoreContainer" class="clearfix">
+            <h2>Results</h2>
+            <div id="carScore1" class="carScore">Car 1<span></span></div>
+            <div id="carScore2" class="carScore">Car 2<span></span></div>
+            <div id="carScore3" class="carScore">Car 3<span></span></div>
+            <div id="carScore4" class="carScore">Car 4<span></span></div>
+            <div id="carScore5" class="carScore">Car 5<span></span></div>
+            <div id="carScore6" class="carScore">Car 6<span></span></div>
+            <div id="carScore7" class="carScore">Car 7<span></span></div>
+            <div id="carScore8" class="carScore">Car 8<span></span></div>
+            <div id="carScore9" class="carScore">Car 9<span></span></div>
+        </div>
+        
+        <!-- Load the CDN first -->
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+        <!-- If CDN fails to load, serve up the local version -->
+        <script>window.jQuery || document.write('<script src="js/jquery-2.1.4.js"><\/script>');</script>
+        
+        <script src="js/script.js"></script>
+    </body>
+    
+</html>
+
